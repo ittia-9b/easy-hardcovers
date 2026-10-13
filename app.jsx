@@ -71,13 +71,13 @@ const FlatLayoutSVG = ({ dims }) => {
             {/* --- Margin Dimensions --- */}
             <g className="stroke-margin-item fill-margin-item">
                 {/* Cover Margin */}
-                <line x1={-5} y1={dims.fabricMargin + dims.boardH/2} x2={leftBoardX} y2={dims.fabricMargin + dims.boardH/2} marker-end="url(#arrow)"/>
+                <line x1={-5} y1={dims.fabricMargin + dims.boardH/2} x2={leftBoardX} y2={dims.fabricMargin + dims.boardH/2} markerEnd="url(#arrow)"/>
                 <text x="-20" y={dims.fabricMargin + dims.boardH/2 + 4} className="label-sm text-margin-item">
                     cover<tspan x="-20" dy="1.2em">margin</tspan>
                 </text>
 
                 {/* Fabric Margin */}
-                <line x1={dims.fabricW - dims.fabricMargin - dims.boardW/2} y1={dims.fabricMargin + dims.boardH + 5} x2={dims.fabricW - dims.fabricMargin - dims.boardW/2} y2={dims.fabricH} marker-end="url(#arrow)"/>
+                <line x1={dims.fabricW - dims.fabricMargin - dims.boardW/2} y1={dims.fabricMargin + dims.boardH + 5} x2={dims.fabricW - dims.fabricMargin - dims.boardW/2} y2={dims.fabricH} markerEnd="url(#arrow)"/>
                 <text x={dims.fabricW - dims.fabricMargin - dims.boardW/2} y={dims.fabricH + 15} className="label-sm text-margin-item">fabric margin</text>
             </g>
 
